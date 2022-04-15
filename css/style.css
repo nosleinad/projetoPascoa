@@ -1,7 +1,55 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    
+.banner {
+    background-color: #352727;
+    padding: 15px;
+    margin: 15px;
+}
+
+.banner span {
+    position: relative;
+    left: 40%;
+    color: #fff;
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Nanum Brush Script', cursive;
+
+}
+
+.banner p {
+    text-align: center;
+    font-size: 150%;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.produto {
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.produto img {
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+
+.produto .titulo {
+    float: left;
+    background-color: rgb(238, 202, 157);
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    width: 40%;
+
+}
+
+
+
+
+
+footer {
+background-color: #352727;
+color: #fff;
+padding: 10px;
 }
