@@ -7,7 +7,7 @@
 .banner span {
     position: relative;
     left: 40%;
-    color: #fff;
+    color: #6DA276;
     text-align: center;
     font-size: 400%;
     font-family: 'Nanum Brush Script', cursive;
@@ -49,7 +49,10 @@
 
 
 footer {
-background-color: #352727;
+background-color: #6DA276;
+position: absolute;
+width: 100%;
+bottom: 0;
 color: #fff;
 padding: 10px;
 }
