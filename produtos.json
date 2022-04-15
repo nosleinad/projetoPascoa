@@ -1,0 +1,44 @@
+[
+    {
+        "nome":"Produto00",
+        "descricao":"Este é o produto tal...",
+        "valor": 100,
+        "quantidade": 0,
+        "img":"foto01.jpg"
+    },
+    {
+        "nome":"Produto01",
+        "descricao":"Este é o produto tal...",
+        "valor": 100,
+        "quantidade": 0,
+        "img":"foto01.jpg"
+    },
+    {
+        "nome":"Produto02",
+        "descricao":"Este é o produto tal...",
+        "valor": 100,
+        "quantidade": 0,
+        "img":"foto01.jpg"
+    },
+    {
+        "nome":"Produto03",
+        "descricao":"Este é o produto tal...",
+        "valor": 100,
+        "quantidade": 0,
+        "img":"foto01.jpg"
+    },
+    {
+        "nome":"Produto04",
+        "descricao":"Este é o produto tal...",
+        "valor": 100,
+        "quantidade": 0,
+        "img":"foto01.jpg"
+    },
+    {
+        "nome":"Produto05",
+        "descricao":"Este é o produto tal...",
+        "valor": 100,
+        "quantidade": 0,
+        "img":"foto01.jpg"
+    }
+]

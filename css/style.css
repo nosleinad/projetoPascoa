@@ -1,12 +1,18 @@
+.home {
+    background-image: url(/img/Pascoa22_LP_Background.jpg);
+    width: 100%;
+    padding-bottom: 25px;
+}
+
 .banner {
     background-color: #352727;
     padding: 15px;
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
 .banner span {
     position: relative;
-    left: 40%;
+    left: 35%;
     color: #6DA276;
     text-align: center;
     font-size: 400%;
@@ -32,16 +38,64 @@
     float: left;
     height: 100%;
     width: 40%;
+
 }
 
 .produto .titulo {
     float: left;
-    background-color: rgb(238, 202, 157);
+    background-color: #6DA276;
+    color: #fff;
     text-align: center;
     font-size: 150%;
     font-weight: bold;
-    width: 40%;
+    width: 100%;
 
+}
+
+.produto .descricao {
+    float: left;
+    background-color: #F59F0C;
+    width: 60%;
+    height: 80%;
+    padding: 10px;
+}
+
+.produto .valor {
+    float: left;
+    text-align: center;
+    background-color: azure;
+    width: 30%;
+    height: 20%;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.produto .bt {
+    float: left;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    background-color: #6DA276;
+    cursor: pointer;
+    font-size: 150%;
+    font-weight: bold;
+
+}
+
+.produto .bt:hover {
+    background-color: #352727;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.produto .quantidade {
+    float: left;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    font-size: 150%;
+    background-color: azure;
 }
 
 
@@ -49,10 +103,8 @@
 
 
 footer {
-background-color: #6DA276;
-position: absolute;
-width: 100%;
-bottom: 0;
-color: #fff;
-padding: 10px;
+    background-color: #6DA276;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
 }
