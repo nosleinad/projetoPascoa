@@ -1,13 +1,13 @@
 .home {
     background-image: url(/img/Pascoa22_LP_Background.jpg);
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 5%;
 }
 
 .banner {
     background-color: #352727;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .banner span {
@@ -54,7 +54,9 @@
 
 .produto .descricao {
     float: left;
-    background-color: #F59F0C;
+    background-color: #be8117;
+    text-align: justify;
+    color: #fff;
     width: 60%;
     height: 80%;
     padding: 10px;

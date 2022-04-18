@@ -1,8 +1,8 @@
 [
     {
-        "nome":"Produto00",
-        "descricao":"Este é o produto tal...",
-        "valor": 100,
+        "nome":"Ovo Especial de Honeycomb (340g)",
+        "descricao":"As famosas pepitas de Honeycomb Carole Crema (torrões de mel aerados, super crocantes) viraram ovo de Páscoa! Este Especial Ovo é elaborado com chocolate Callebaut ao leite, cravejado das saborosas pepitas de honeycomb da Donna Chiquinha! Um espetáculo.",
+        "valor": 160,
         "quantidade": 0,
         "img":"foto01.jpg"
     },
