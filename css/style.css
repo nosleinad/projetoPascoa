@@ -106,7 +106,28 @@
 
 footer {
     background-color: #6DA276;
-    width: 100%;
     color: #fff;
-    padding: 10px;
+    font-size: 150%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pagamento {
+   height: 105px;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.pagamento img {
+   width: 20%;
+    margin: 3px;
+    border-radius: 4px;  
+    text-align: center; 
+}
+
+.direitos {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.atendimento {
+    padding: 1%;
 }
