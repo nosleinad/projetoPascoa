@@ -11,7 +11,7 @@
         "descricao":"Novidade de 2022, o meio ovo de chocolate ao leite com muito recheio de creme de chocolate branco e mais ovomaltine crocante! Peso 500g.",
         "valor": 194.90,
         "quantidade": 0,
-        "img":"foto02.web"
+        "img":"foto02.webp"
     },
     {
         "nome":"Ovo de Colher Pistache (350g",
@@ -25,20 +25,20 @@
         "descricao":"Novidade de 2022, o meio ovo de chocolate ao leite com muito recheio de creme de chocolate branco e mais ovomaltine crocante! Peso 450g",
         "valor": 104.93,
         "quantidade": 0,
-        "img":"foto01.jpg"
+        "img":"foto04.jpg"
     },
     {
         "nome":"Pack de 10 Crocantino de Pistache",
         "descricao":"Doce a base de pistaches selecionados e ovos finalizado com pistaches laminados",
         "valor": 59.65,
         "quantidade": 0,
-        "img":"foto01.jpg"
+        "img":"foto05.jpg"
     },
     {
-        "nome":"Ovo de Colher Buono Avelã (450g)",
-        "descricao":"Novidade em 2022, o ovo de chocolate ao leite super recheado com delicioso creme branco de avelãs e mais crocante de avelãs. Incrível! Peso 450g",
+        "nome":"Pack de 10 Crocantino de Pistache",
+        "descricao":"Doce a base de pistaches selecionados e ovos finalizado com pistaches laminados",
         "valor": 79.90,
         "quantidade": 0,
-        "img":"foto01.jpg"
+        "img":"foto06.webp"
     }
 ]
