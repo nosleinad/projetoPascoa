@@ -29,55 +29,51 @@ function replicar() {
     }
     document.querySelector(".produto").remove();
 }
-
 function alteraQuantidade(id, quantidade) {
     let p = lista[id];
     p.quantidade += quantidade;
     if (p.quantidade < 0) p.quantidade = 0;
     document.getElementsByClassName("quantidade")[id].innerHTML = p.quantidade;
-    console.log(quantidade);
+    /*  console.log(quantidade); */
 }
-
 let msgModal = "";
 
+
 function mostrarPedidos() {
-    let msgModal = "";
+    msgModal = "";
     let subTotal = 0;
     let total = 0;
-    
 
     for (const produto of lista) {
-        subTotal = (produto.valor * produto.quantidade).toFixed(2);
-        total += +subTotal;
 
         if (produto.quantidade > 0) {
+            subTotal = (produto.valor * produto.quantidade).toFixed(2);
+            total += +subTotal;
             msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = R$ ${subTotal})</p> `
 
         }
     }
-   
 
     if (msgModal == "") {
-        msgModal = `<p>Nenhum produto Selecionado.</p>`
+        msgModal = `<p>Nenhum produto Selecionado.</p>`;
         document.querySelector("#btEnviar").disabled = "disabled";
     } else {
-        msgModal += `<b>Total: R$ ${total.toFixed(2)}</b>`
+        msgModal += `<b>Total: R$ ${total.toFixed(2)}</b>`;
         document.querySelector("#btEnviar").disabled = "";
     }
 
     document.querySelector(".modal-body").innerHTML = msgModal;
 }
 
-function enviar(){
-    
+function enviar() {
+
     let fone = '5561982222994';
-    msgModal = msgModal.replaceAll("<p>","").replaceAll("</p>","\n");
-    msgModal = msgModal.replaceAll("<b>","*").replaceAll("</b>","*");
+    msgModal = msgModal.replaceAll("<p>", "").replaceAll("</p>", "\n");
+    msgModal = msgModal.replaceAll("<b>", "*").replaceAll("</b>", "*");
     let nome = document.querySelector("#nome").value;
     let endereco = document.querySelector("#endereco").value;
-    msgModal += `\nNome: *${nome}*`;
-    msgModal += `\nEndereço: *${endereco}*`;
-    
+    msgModal += `\n\nOlá me chamo:\n *${nome}* desejo fazer um pedido.`;
+    msgModal += `\nMeu endereço é: *${endereco}*`;
     msgModal = encodeURI(msgModal);
 
     link = `https://api.whatsapp.com/send?phone=${fone}&text=${msgModal}`;
