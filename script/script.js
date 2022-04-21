@@ -30,12 +30,37 @@ function replicar() {
     document.querySelector(".produto").remove();
 }
 
-function alteraQuantidade(id, quantidade){
+function alteraQuantidade(id, quantidade) {
     let p = lista[id];
     p.quantidade += quantidade;
-    if(p.quantidade < 0) p.quantidade = 0;
+    if (p.quantidade < 0) p.quantidade = 0;
     document.getElementsByClassName("quantidade")[id].innerHTML = p.quantidade;
     console.log(quantidade);
+}
+
+function mostrarPedidos() {
+    let msgModal = "";
+    let subTotal = 0;
+    let total = 0;
+
+    for (const produto of lista) {
+        subTotal = (produto.valor * produto.quantidade).toFixed(2);
+        total += subTotal;
+
+        if (produto.quantidade > 0) {
+            msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = ${subTotal})</p>`
+
+        }
+    }
+    
+    if(msgModal == ""){
+        msgModal = `<p>Nenhum produto Selecionado.</p>`
+        document.querySelector("#btEnviar").disabled = "disabled";
+    }else{
+        document.querySelector("#btEnviar").disabled = "";
+    }
+
+    document.querySelector(".modal-body").innerHTML = msgModal;
 }
 
 buscarListaProduto();
