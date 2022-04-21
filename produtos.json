@@ -7,37 +7,37 @@
         "img":"foto01.jpg"
     },
     {
-        "nome":"Produto01",
-        "descricao":"Este é o produto tal...",
-        "valor": 100,
+        "nome":"Ovo de Colher",
+        "descricao":"Novidade de 2022, o meio ovo de chocolate ao leite com muito recheio de creme de chocolate branco e mais ovomaltine crocante! Peso 500g.",
+        "valor": 194.90,
+        "quantidade": 0,
+        "img":"foto02.web"
+    },
+    {
+        "nome":"Ovo de Colher Pistache (350g",
+        "descricao":"Eleito e reconhecido por nossos consumidores como um dos melhores ovos de páscoa! Confeccionado em uma Casca de chocolate amargo blend Carole Crema, recheado com creme de pistaches e coberto por pedaços de pistaches. Um luxo! Peso 310g ",
+        "valor": 136.43,
+        "quantidade": 0,
+        "img":"foto03.jpg"
+    },
+    {
+        "nome":"Ovo de Colher Croc-Maltine (500g)",
+        "descricao":"Novidade de 2022, o meio ovo de chocolate ao leite com muito recheio de creme de chocolate branco e mais ovomaltine crocante! Peso 450g",
+        "valor": 104.93,
         "quantidade": 0,
         "img":"foto01.jpg"
     },
     {
-        "nome":"Produto02",
-        "descricao":"Este é o produto tal...",
-        "valor": 100,
+        "nome":"Pack de 10 Crocantino de Pistache",
+        "descricao":"Doce a base de pistaches selecionados e ovos finalizado com pistaches laminados",
+        "valor": 59.65,
         "quantidade": 0,
         "img":"foto01.jpg"
     },
     {
-        "nome":"Produto03",
-        "descricao":"Este é o produto tal...",
-        "valor": 100,
-        "quantidade": 0,
-        "img":"foto01.jpg"
-    },
-    {
-        "nome":"Produto04",
-        "descricao":"Este é o produto tal...",
-        "valor": 100,
-        "quantidade": 0,
-        "img":"foto01.jpg"
-    },
-    {
-        "nome":"Produto05",
-        "descricao":"Este é o produto tal...",
-        "valor": 100,
+        "nome":"Ovo de Colher Buono Avelã (450g)",
+        "descricao":"Novidade em 2022, o ovo de chocolate ao leite super recheado com delicioso creme branco de avelãs e mais crocante de avelãs. Incrível! Peso 450g",
+        "valor": 79.90,
         "quantidade": 0,
         "img":"foto01.jpg"
     }

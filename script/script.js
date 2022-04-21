@@ -2,7 +2,7 @@ lista = [];
 
 function buscarListaProduto() {
     let ajax = new XMLHttpRequest();
-    ajax.open("GET", "produtos.json");
+    ajax.open("GET", "https://nosleinad.github.io/projetoPascoa/produtos.json");
     ajax.send();
     ajax.onload = function () {
         lista = JSON.parse(this.response);
@@ -16,7 +16,7 @@ function replicar() {
         let id = i;
         let produto = document.querySelector(".produto").cloneNode(true);
         produto.querySelector(".titulo").innerHTML = p.nome;
-        produto.querySelector("img").innerHTML = p.img;
+        produto.querySelector("img").src = `https://nosleinad.github.io/projetoPascoa/img/${p.img}`;
         produto.querySelector(".valor").innerHTML = `R$ ${p.valor}`;
         produto.querySelector(".descricao").innerHTML = p.descricao;
         produto.querySelector(".quantidade").innerHTML = p.quantidade;
