@@ -48,15 +48,16 @@ function mostrarPedidos() {
         total += subTotal;
 
         if (produto.quantidade > 0) {
-            msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = ${subTotal})</p>`
+            msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = R$ ${subTotal})</p> `
 
         }
     }
-    
-    if(msgModal == ""){
+   
+
+    if (msgModal == "") {
         msgModal = `<p>Nenhum produto Selecionado.</p>`
         document.querySelector("#btEnviar").disabled = "disabled";
-    }else{
+    } else {
         document.querySelector("#btEnviar").disabled = "";
     }
 
