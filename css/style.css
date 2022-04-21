@@ -1,5 +1,6 @@
 .home {
-    background-image: url(/img/Pascoa22_LP_Background.jpg);
+    background-image: url("/img/Pascoa22_LP_Background.jpg");
+    background-image: url("http://127.0.0.1:5500/img/Pascoa22_LP_Background.jpg");
     
     width: 100%;
     padding-bottom: 5%;
@@ -27,6 +28,17 @@
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+
+.banner i {
+    float: right;
+    font-size: 300%; 
+    background-color: #6DA276;
+    margin: 6px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .produto {
