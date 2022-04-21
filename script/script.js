@@ -38,14 +38,17 @@ function alteraQuantidade(id, quantidade) {
     console.log(quantidade);
 }
 
+let msgModal = "";
+
 function mostrarPedidos() {
     let msgModal = "";
     let subTotal = 0;
     let total = 0;
+    
 
     for (const produto of lista) {
         subTotal = (produto.valor * produto.quantidade).toFixed(2);
-        total += subTotal;
+        total += +subTotal;
 
         if (produto.quantidade > 0) {
             msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = R$ ${subTotal})</p> `
@@ -58,10 +61,27 @@ function mostrarPedidos() {
         msgModal = `<p>Nenhum produto Selecionado.</p>`
         document.querySelector("#btEnviar").disabled = "disabled";
     } else {
+        msgModal += `<b>Total: R$ ${total.toFixed(2)}</b>`
         document.querySelector("#btEnviar").disabled = "";
     }
 
     document.querySelector(".modal-body").innerHTML = msgModal;
+}
+
+function enviar(){
+    
+    let fone = '5561982222994';
+    msgModal = msgModal.replaceAll("<p>","").replaceAll("</p>","\n");
+    msgModal = msgModal.replaceAll("<b>","*").replaceAll("</b>","*");
+    let nome = document.querySelector("#nome").value;
+    let endereco = document.querySelector("#endereco").value;
+    msgModal += `\nNome: *${nome}*`;
+    msgModal += `\nEndereço: *${endereco}*`;
+    
+    msgModal = encodeURI(msgModal);
+
+    link = `https://api.whatsapp.com/send?phone=${fone}&text=${msgModal}`;
+    window.open(link, '_blanck')
 }
 
 buscarListaProduto();
