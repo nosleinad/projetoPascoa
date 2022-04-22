@@ -49,7 +49,7 @@ function mostrarPedidos() {
         if (produto.quantidade > 0) {
             subTotal = (produto.valor * produto.quantidade).toFixed(2);
             total += +subTotal;
-            msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = R$ ${subTotal})</p> `
+            msgModal += `<p>${produto.nome.toUpperCase()} (R$ ${produto.valor} x ${produto.quantidade} = <b>R$ ${subTotal}</b>)</p> `;
 
         }
     }
@@ -72,8 +72,8 @@ function enviar() {
     msgModal = msgModal.replaceAll("<b>", "*").replaceAll("</b>", "*");
     let nome = document.querySelector("#nome").value;
     let endereco = document.querySelector("#endereco").value;
-    msgModal += `\n\nOlá me chamo:\n *${nome}* desejo fazer um pedido.`;
-    msgModal += `\nMeu endereço é: *${endereco}*`;
+    msgModal += `\n\nOlá me chamo *${nome.toUpperCase()}*, desejo fazer um pedido.`;
+    msgModal += `\nMeu endereço é: *${endereco.toUpperCase()}*`;
     msgModal = encodeURI(msgModal);
 
     link = `https://api.whatsapp.com/send?phone=${fone}&text=${msgModal}`;
